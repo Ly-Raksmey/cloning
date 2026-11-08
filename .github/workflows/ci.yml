@@ -17,9 +17,6 @@ jobs:
         with:
           node-version: 24
 
-      - name: Create Node Test Packages
-        run: npm pkg set scripts.test="node --test"
-
       - name: Create Packages
         run: npm init -y
 
