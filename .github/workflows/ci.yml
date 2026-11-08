@@ -17,11 +17,11 @@ jobs:
         with:
           node-version: 24
 
-      - name: Configure Test Script
-        run: npm pkg set scripts.test="node --test"
-
       - name: Create Packages
         run: npm init -y
+
+      - name: Configure Test Script
+        run: npm pkg set scripts.test="node --test"
 
       - name: Install Lock-File
         run: npm install --package-lock-only 
